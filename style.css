@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #454545;
+         ;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .heading {
+        font-size: 45px;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        position: absolute;
+        top: 2rem;
+        left: 29rem;
+        padding: 12px;
+        margin: 4px;
+        border-radius: 5px;
+    }
+
+   .clock {
+       background-color: aqua;
+       width: 300px;
+       height: 300px;
+       border-radius: 50%;
+       color: maroon;
+       border: 7px solid #273746;
+       box-shadow: 0px 0px 8px black, 0px 0px 18px black;
+       font-size: 26px;
+       font-weight: bold;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative; 
+    }
+
+    .clock ul li{
+       list-style: none;
+       position: absolute;
+       text-align: center;
+       transform: rotate(calc(30deg * var(--i)));
+       inset: 5px;
+    }
+
+   .clock ul li span {
+       transform: rotate(calc(-30deg * var(--i)));
+       display: inline-block;
+    }
+
+    .clock:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .needle{
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+    }
+
+   .needle span {
+       width: 5px;
+       height: var(--h);
+       background-color: var(--clr);
+       position: absolute;
+       border-radius: 5px;
+    }
+
+    .digital {
+        width: 280px;
+        height: 40px;
+        color: maroon;
+        background-color: aqua;
+        position: absolute;
+        top: 30rem;
+        left: 29rem;
+        padding: 8px;
+        text-align: center;
+        border: 5px solid #273746;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px black;
+    }
